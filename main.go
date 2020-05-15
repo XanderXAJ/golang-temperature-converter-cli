@@ -43,6 +43,8 @@ func main() {
 			printError(errReadingInput)
 		}
 
+		shouldConvertAgain = strings.ToUpper(strings.TrimSpace(shouldConvertAgain))
+
 		if shouldConvertAgain != "Y" {
 			fmt.Println("Good bye!")
 			break
